@@ -1,0 +1,182 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li.right {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+
+main {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+
+.left-section {
+    flex: 2;
+}
+
+.left-section article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.left-section h2 {
+    margin-bottom: 5px;
+}
+
+.mcm-img,
+.cea-img {
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.mcm-img img,
+.cea-img img {
+    width: 100%;        
+    height: 750px;      
+    object-fit: fill;  
+    border-radius: 8px;
+    display: block;
+}
+
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-section > div {
+    background-color: white;
+    padding: 20px;
+}
+.mypic-img {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.mypic-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.food-img {
+    background: none; 
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.food-img img {
+    width: 100%;
+    max-width: 300px; 
+    height: 250px;     
+    object-fit: cover;  
+}
+footer {
+    text-align: center;
+    background-color: #d9d9d9;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+a:hover, a:focus {
+    opacity: 0.8;
+}
+
+#darkModeToggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #555;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode nav {
+    background-color: #000;
+}
+
+body.dark-mode nav a {
+    color: #ddd;
+}
+
+body.dark-mode main article,
+body.dark-mode aside > div {
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+}
